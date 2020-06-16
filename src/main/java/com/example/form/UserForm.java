@@ -1,12 +1,16 @@
 package com.example.form;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Range;
 
 public class UserForm {
 
 	@NotBlank(message="名前は必須です")
 	private String name;
-	@NotBlank(message="年齢は必須です")
+	@Range(min=0, max= 140, message="年齢ちゃんとして")
+	@NotNull(message="年齢は必須です")
 	private Integer age;
 	@NotBlank(message="コメントは必須です")
 	private String comment;
