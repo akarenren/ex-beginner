@@ -22,9 +22,10 @@ public class Exam03Controller {
 	
 	@RequestMapping("/result")
 	public String result(ProductList productList) {
-		application.setAttribute("price1", productList.getPrice1());
-		application.setAttribute("price2", productList.getPrice2());
-		application.setAttribute("price3", productList.getPrice3());
+		int total = productList.getPrice1() + productList.getPrice2() + productList.getPrice3();
+		int totalWithTax = (int)(total * 1.1);
+		application.setAttribute("total", total);
+		application.setAttribute("totalWithTax", totalWithTax);
 		return "exam03-result";
 	}
 }
