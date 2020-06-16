@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/ex01")
 public class Exam01Controller {
 
-	@RequestMapping("/")
+	@RequestMapping("")
 	public String form() {
 		return "exam01";
 	}
