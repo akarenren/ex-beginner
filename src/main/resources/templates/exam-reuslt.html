@@ -5,6 +5,12 @@
     <title>Insert title here</title>
   </head>
   <body>
-    
+    <h1>足し算結果</h1>
+    <span th:text="${num1}"></span>
+    <span>＋</span>
+    <span th:text="${num2}"></span>
+    <span>＝</span>
+    <span th:text="${total}"></span><br>
+    <a th:href="@{/ex02/result2}">次へ</a>
   </body>
 </html>
