@@ -5,10 +5,7 @@
     <title>Insert title here</title>
   </head>
   <body>
-    <form th:action="@{/ex01/result}" method="post">
-      <label>名前：</label><br>
-      <input type="text" name="name">
-      <button>送信</button>
-    </form>
+    <span>名前：</span>
+    <span th:text="${name}"></span>
   </body>
 </html>
