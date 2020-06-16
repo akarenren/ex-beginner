@@ -25,7 +25,7 @@ public class Exam02Controller {
 		session.setAttribute("num2", num2);
 		session.setAttribute("total", total);
 		
-		return "exam02-result1";
+		return "exam02-result";
 	}
 	
 	@RequestMapping("/result2")
